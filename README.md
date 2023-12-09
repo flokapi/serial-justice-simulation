@@ -67,13 +67,17 @@ Start the simulation with `python test.py`
 
 Example: [expected_result.txt](./doc/expected_result.txt)
 
-If the DAO has no members, the members will be added
+Steps:
 
-The first member submits a questions, which burns a Justice Token. If he has no JT token, he will have to wait util the next token creation.
+1. If the DAO has no members, the members will be added
 
-A member of the DAO will be randomly picked as the next voter on the question. He submits an answer.
+2. The first member submits a questions, which burns a Justice Token. If he has no JT token, he will have to wait util the next token creation.
 
-The first member repeats requesting new voters by spending tokens until the question reaches a certain number of votes and becomes "finally answered".
+3. A member of the DAO will be randomly picked as the next voter on the question.
+
+4. The new voter submits an answer.
+
+5. The first member repeats requesting new voters by spending tokens until the question reaches a certain number of votes and becomes "finally answered".
 
 
 
