@@ -1,0 +1,113 @@
+Running on chain id: 4002
+MainDAO address: 0x80Dd8a5fBa22440baAEFEA491D50d4F72703C435
+SerialJustice address: 0x06Fad55aBd8131C9866911BFf796Fa50d622436C
+JusticeToken address: 0x5043339349e56Aa0CccC5a7E0111A921266743bb
+=================== State: add_members
+Not needed
+Number of DAO members: 5
+### Performing upkeep
+=================== State: submit_question
+### Submitting a question
+=> Successful
+=================== Last question
+Question 11: [1, 'Is pineapple allowed on pizza?', '0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa', '0x0000000000000000000000000000000000000000', 0, 0]
+=================== State: wait_new_voter_defined
+Next voter not yet defined, waiting...
+=================== State: wait_new_voter_defined
+Next voter not yet defined, waiting...
+=================== State: wait_new_voter_defined
+Next voter not yet defined, waiting...
+=================== State: wait_new_voter_defined
+Next Voter selected: 0x7026A9C05aa2C38a8C712Ed2f2b03a669A16bFF3
+=================== Last question
+Question 11: [2, 'Is pineapple allowed on pizza?', '0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa', '0x7026A9C05aa2C38a8C712Ed2f2b03a669A16bFF3', 0, 0]
+=================== State: new_voter_submits_answer
+### Member 0x7026A9C05aa2C38a8C712Ed2f2b03a669A16bFF3 submits answer to "Is pineapple allowed on pizza?": False
+=================== Last question
+Question 11: [0, 'Is pineapple allowed on pizza?', '0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa', '0x0000000000000000000000000000000000000000', 0, 1]
+=================== State: request_new_voter
+Not enough Justice Tokens, waiting for token creation...
+### Performing upkeep
+=================== State: request_new_voter
+### Requesting a new voter
+=> Successful
+=================== Last question
+Question 11: [1, 'Is pineapple allowed on pizza?', '0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa', '0x0000000000000000000000000000000000000000', 0, 1]
+=================== State: wait_new_voter_defined
+Next voter not yet defined, waiting...
+=================== State: wait_new_voter_defined
+Next Voter selected: 0x7026A9C05aa2C38a8C712Ed2f2b03a669A16bFF3
+=================== Last question
+Question 11: [2, 'Is pineapple allowed on pizza?', '0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa', '0x7026A9C05aa2C38a8C712Ed2f2b03a669A16bFF3', 0, 1]
+=================== State: new_voter_submits_answer
+### Member 0x7026A9C05aa2C38a8C712Ed2f2b03a669A16bFF3 submits answer to "Is pineapple allowed on pizza?": True
+=================== Last question
+Question 11: [0, 'Is pineapple allowed on pizza?', '0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa', '0x0000000000000000000000000000000000000000', 1, 1]
+=================== State: request_new_voter
+Not enough Justice Tokens, waiting for token creation...
+=================== State: request_new_voter
+Not enough Justice Tokens, waiting for token creation...
+=================== State: request_new_voter
+Not enough Justice Tokens, waiting for token creation...
+### Performing upkeep
+=================== State: request_new_voter
+### Requesting a new voter
+=> Successful
+=================== Last question
+Question 11: [1, 'Is pineapple allowed on pizza?', '0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa', '0x0000000000000000000000000000000000000000', 1, 1]
+=================== State: wait_new_voter_defined
+Next voter not yet defined, waiting...
+=================== State: wait_new_voter_defined
+Next voter not yet defined, waiting...
+=================== State: wait_new_voter_defined
+Next voter not yet defined, waiting...
+=================== State: wait_new_voter_defined
+Next Voter selected: 0x96d1AB5Ad57e004C9AC2de5C390d3fEe3Ae4A84B
+=================== Last question
+Question 11: [2, 'Is pineapple allowed on pizza?', '0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa', '0x96d1AB5Ad57e004C9AC2de5C390d3fEe3Ae4A84B', 1, 1]
+=================== State: new_voter_submits_answer
+### Member 0x96d1AB5Ad57e004C9AC2de5C390d3fEe3Ae4A84B submits answer to "Is pineapple allowed on pizza?": True
+=================== Last question
+Question 11: [0, 'Is pineapple allowed on pizza?', '0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa', '0x0000000000000000000000000000000000000000', 2, 1]
+=================== State: request_new_voter
+Not enough Justice Tokens, waiting for token creation...
+### Performing upkeep
+=================== State: request_new_voter
+### Requesting a new voter
+=> Successful
+=================== Last question
+Question 11: [1, 'Is pineapple allowed on pizza?', '0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa', '0x0000000000000000000000000000000000000000', 2, 1]
+=================== State: wait_new_voter_defined
+Next voter not yet defined, waiting...
+=================== State: wait_new_voter_defined
+Next Voter selected: 0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa
+=================== Last question
+Question 11: [2, 'Is pineapple allowed on pizza?', '0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa', '0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa', 2, 1]
+=================== State: new_voter_submits_answer
+### Member 0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa submits answer to "Is pineapple allowed on pizza?": False
+=================== Last question
+Question 11: [0, 'Is pineapple allowed on pizza?', '0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa', '0x0000000000000000000000000000000000000000', 2, 2]
+=================== State: request_new_voter
+Not enough Justice Tokens, waiting for token creation...
+=================== State: request_new_voter
+Not enough Justice Tokens, waiting for token creation...
+=================== State: request_new_voter
+Not enough Justice Tokens, waiting for token creation...
+### Performing upkeep
+=================== State: request_new_voter
+### Requesting a new voter
+=> Successful
+=================== Last question
+Question 11: [1, 'Is pineapple allowed on pizza?', '0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa', '0x0000000000000000000000000000000000000000', 2, 2]
+=================== State: wait_new_voter_defined
+Next voter not yet defined, waiting...
+=================== State: wait_new_voter_defined
+Next Voter selected: 0x2993A16b15Ad68283fddfC2be06258c0f8738B9A
+=================== Last question
+Question 11: [2, 'Is pineapple allowed on pizza?', '0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa', '0x2993A16b15Ad68283fddfC2be06258c0f8738B9A', 2, 2]
+=================== State: new_voter_submits_answer
+### Member 0x2993A16b15Ad68283fddfC2be06258c0f8738B9A submits answer to "Is pineapple allowed on pizza?": False
+=================== Last question
+Question 11: [3, 'Is pineapple allowed on pizza?', '0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa', '0x0000000000000000000000000000000000000000', 2, 3]
+Unfortunately, pinapple is not allowed on pizza
+Finished.

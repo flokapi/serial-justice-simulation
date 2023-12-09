@@ -1,6 +1,6 @@
 # Getting started
 
-### Preparation
+## Preparation
 
 As a prerequisite, [serial-justice-contracts](https://github.com/flokapi/serial-justice-contracts) must be installed. 
 
@@ -10,7 +10,9 @@ Create 5 MetaMask wallets and fund them with the Fantom Testnet Faucet:  https:/
 
 
 
-### Installation
+## Installation
+
+#### Clone the repository
 
 You should find yourself in the same directory as `serial-justice-contracts`
 
@@ -28,6 +30,8 @@ git clone git@github.com:flokapi/serial-justice-simulation.git
 ````
 
 
+
+### Deploy and export the contracts
 
 From `serial-justice-contracts`, deploy to the Fantom Testnet
 
@@ -53,10 +57,21 @@ Create a `serial-justice-simulation/env/private_keys.json`  which contains the p
 
 
 
-### Running
+### Run the simulation
 
 Start the simulation with `python test.py`
 
 
 
-### Expected results
+# Expected results
+
+Example: [expected_result.txt](./doc/expected_result.txt)
+
+If the DAO has no members, the members will be added
+
+The first member submits a questions, which burns a Justice Token. If he has no JT token, he will have to wait util the next token creation.
+
+A member of the DAO will be randomly picked as the next voter on the question. He submits an answer.
+
+The first member repeats requesting new voters by spending tokens until the question reaches a certain number of votes and becomes "finally answered".
+
