@@ -12,7 +12,7 @@ Create 5 MetaMask wallets and fund them with the Fantom Testnet Faucet:  https:/
 
 ## Installation
 
-#### Clone the repository
+### Clone the repository
 
 You should find yourself in the same directory as `serial-justice-contracts`
 
@@ -75,3 +75,30 @@ A member of the DAO will be randomly picked as the next voter on the question. H
 
 The first member repeats requesting new voters by spending tokens until the question reaches a certain number of votes and becomes "finally answered".
 
+
+
+The `Question` structs of the `SerialJustice` contracts are represented as a list:
+
+````
+[2, 'Is pineapple allowed on pizza?', '0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa', '0x7026A9C05aa2C38a8C712Ed2f2b03a669A16bFF3', 0, 1]
+````
+
+can be interpreted with:
+
+````solidity
+enum QuestionState {
+    IDLE,
+    AWAITING_VOTER_DESIGNATION,
+    AWAITING_VOTER_ANSWER,
+    FINAL_ANSWER
+}
+
+struct Question {
+    QuestionState state;
+    string text;
+    address submitter;
+    address nextVoter;
+    uint256 nbVotesYes;
+    uint256 nbVotesNo;
+}
+````
