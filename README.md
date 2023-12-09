@@ -27,7 +27,16 @@ Clone the `serial-justice-simulation` repository
 
 ````
 git clone git@github.com:flokapi/serial-justice-simulation.git
+cd serial-justice-simulation
 ````
+
+
+
+Install the python packages
+
+```
+pip install -r requirements.txt
+```
 
 
 

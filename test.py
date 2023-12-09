@@ -25,7 +25,7 @@ QUESTION_AWAITING_VOTER_ANSWER = 2
 QUESTION_FINAL_ANSWER = 3
 
 
-###### Helper functions
+# Helper functions
 
 
 def call(_contract, _function, _args=[]):
@@ -34,7 +34,8 @@ def call(_contract, _function, _args=[]):
 
 def transact(_w3, _contract, _function, _args=[], _params={}):
     try:
-        tx_hash = getattr(_contract.functions, _function)(*_args).transact(_params)
+        tx_hash = getattr(_contract.functions, _function)(
+            *_args).transact(_params)
         _w3.eth.wait_for_transaction_receipt(tx_hash)
         return True
     except:
@@ -45,14 +46,15 @@ def get_contract(_w3, _address, _abi):
     return _w3.eth.contract(address=_address, abi=_abi)
 
 
-###### Setup
+# Setup
 
 
 def get_contracts(_w3, _daoAddress):
     mainDAO = get_contract(_w3, _daoAddress, MAIN_DAO_ABI)
 
     serial_justice_address = call(mainDAO, "getSerialJusticeAddress")
-    serialJustice = get_contract(_w3, serial_justice_address, SERIAL_JUSTICE_ABI)
+    serialJustice = get_contract(
+        _w3, serial_justice_address, SERIAL_JUSTICE_ABI)
 
     justice_token_address = call(serialJustice, "getJusticeTokenAddress")
     justiceToken = get_contract(_w3, justice_token_address, JUSTICE_TOKEN_ABI)
@@ -69,7 +71,8 @@ def add_accounts(_w3):
 
     for private_key in PRIVATE_KEYS:
         account = Account.from_key(private_key)
-        _w3.middleware_onion.add(construct_sign_and_send_raw_middleware(account))
+        _w3.middleware_onion.add(
+            construct_sign_and_send_raw_middleware(account))
         accounts.append(account.address)
 
     _w3.eth.default_account = accounts[0]
@@ -77,7 +80,7 @@ def add_accounts(_w3):
     return accounts
 
 
-###### State machine simulation
+# State machine simulation
 
 
 def show_last_question(serialJustice):
@@ -102,8 +105,8 @@ def check_upkeep(_w3, _contracts):
 def add_members(_w3, _contracts, _accounts, _state):
     mainDAO, _, _ = _contracts
     if call(mainDAO, "getMemberCount") == 0:
-        print("### Adding DAO members")
         for account in _accounts:
+            print(f"### Adding DAO members {account}")
             transact(_w3, mainDAO, "addMember", [account])
     else:
         print("Not needed")
@@ -124,7 +127,8 @@ def submit_question(_w3, _contracts, _accounts, _state):
 
     print("### Submitting a question")
     if transact(
-        _w3, serialJustice, "submitQuestion", ["Is pineapple allowed on pizza?"]
+        _w3, serialJustice, "submitQuestion", [
+            "Is pineapple allowed on pizza?"]
     ):
         print("=> Successful")
         show_last_question(serialJustice)
@@ -245,7 +249,7 @@ def state_machine_simulation(_w3, _contracts, _accounts):
     state_list = setup_states + voting_cycle_states * 10
     state = State(state_list)
 
-    transact(_w3, _contracts[1], "submitQuestion", ["Is it true?"])  #### hot fix
+    transact(_w3, _contracts[1], "submitQuestion", ["Is it true?"])  # hot fix
     while state.get() != None:
         print(f"=================== State: {state.get()}")
 
@@ -258,7 +262,7 @@ def state_machine_simulation(_w3, _contracts, _accounts):
     print("Finished.")
 
 
-###### Main
+# Main
 
 
 def main():
