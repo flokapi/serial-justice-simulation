@@ -2,13 +2,9 @@
 
 ## Preparation
 
-As a prerequisite, [serial-justice-contracts](https://github.com/flokapi/serial-justice-contracts) must be installed. 
+As a prerequisite, [serial-justice-contracts](https://github.com/flokapi/serial-justice-contracts) must be installed.
 
-
-
-Create 5 MetaMask wallets and fund them with the Fantom Testnet Faucet:  https://faucet.fantom.network/
-
-
+Create 5 MetaMask wallets and fund them with the Fantom Testnet Faucet: https://faucet.fantom.network/
 
 ## Installation
 
@@ -16,45 +12,30 @@ Create 5 MetaMask wallets and fund them with the Fantom Testnet Faucet:  https:/
 
 You should find yourself in the same directory as `serial-justice-contracts`
 
-````
+```
 serial-justice/ <- HERE
 	serial-justice-contract
-````
-
-
+```
 
 Clone the `serial-justice-simulation` repository
 
-````
+```
 git clone git@github.com:flokapi/serial-justice-simulation.git
-cd serial-justice-simulation
-````
-
-
-
-Install the python packages
-
 ```
-pip install -r requirements.txt
-```
-
-
 
 ### Deploy and export the contracts
 
 From `serial-justice-contracts`, deploy to the Fantom Testnet
 
-````
+```
 make deploy ARGS="--network fantom-test"
-````
+```
 
 This should produce a `config.json` and ABI files under `serial-justice-simulation/env`
 
+Create a `serial-justice-simulation/env/private_keys.json` which contains the previously created private keys.
 
-
-Create a `serial-justice-simulation/env/private_keys.json`  which contains the previously created private keys.
-
-````
+```
 [
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
@@ -62,19 +43,15 @@ Create a `serial-justice-simulation/env/private_keys.json`  which contains the p
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 ]
-````
-
-
+```
 
 ### Run the simulation
 
-Start the simulation with `python test.py`
-
-
+Start the simulation with `python simulation.py`
 
 # Expected results
 
-Example: [expected_result.txt](./doc/expected_result.txt)
+Example: [example_result.txt](./doc/example_result.txt)
 
 Steps:
 
@@ -88,17 +65,15 @@ Steps:
 
 5. The first member repeats requesting new voters by spending tokens until the question reaches a certain number of votes and becomes "finally answered".
 
+The `Question` struct of the `SerialJustice` contracts is represented as a list:
 
-
-The `Question` structs of the `SerialJustice` contracts are represented as a list:
-
-````
+```
 [2, 'Is pineapple allowed on pizza?', '0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa', '0x7026A9C05aa2C38a8C712Ed2f2b03a669A16bFF3', 0, 1]
-````
+```
 
 can be interpreted with:
 
-````solidity
+```solidity
 enum QuestionState {
     IDLE,
     AWAITING_VOTER_DESIGNATION,
@@ -114,4 +89,4 @@ struct Question {
     uint256 nbVotesYes;
     uint256 nbVotesNo;
 }
-````
+```
