@@ -23,6 +23,14 @@ Clone the `serial-justice-simulation` repository
 git clone git@github.com:flokapi/serial-justice-simulation.git
 ```
 
+Install the dependencies
+
+````
+pip install -r requirements.txt
+````
+
+
+
 ### Deploy and export the contracts
 
 From `serial-justice-contracts`, deploy to the Fantom Testnet
