@@ -6,9 +6,9 @@ As a prerequisite, [serial-justice-contracts](https://github.com/flokapi/serial-
 
 Create 5 MetaMask wallets and fund them with the Fantom Testnet Faucet: https://faucet.fantom.network/
 
-## Installation
 
-### Clone the repository
+
+## Installation
 
 You should find yourself in the same directory as `serial-justice-contracts`
 
@@ -31,7 +31,7 @@ pip install -r requirements.txt
 
 
 
-### Deploy and export the contracts
+## Deploy and export the contracts
 
 From `serial-justice-contracts`, deploy to the Fantom Testnet
 
@@ -53,9 +53,13 @@ Create a `serial-justice-simulation/env/private_keys.json` which contains the pr
 ]
 ```
 
-### Run the simulation
+
+
+## Run the simulation
 
 Start the simulation with `python simulation.py`
+
+
 
 # Expected results
 
