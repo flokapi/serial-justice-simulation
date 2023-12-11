@@ -33,12 +33,8 @@ def call(_contract, _function, _args=[]):
 
 
 def transact(_w3, _contract, _function, _args=[], _params={}):
-    try:
-        tx_hash = getattr(_contract.functions, _function)(*_args).transact(_params)
-        _w3.eth.wait_for_transaction_receipt(tx_hash)
-        return True
-    except:
-        return False
+    tx_hash = getattr(_contract.functions, _function)(*_args).transact(_params)
+    return _w3.eth.wait_for_transaction_receipt(tx_hash)
 
 
 def get_contract(_w3, _address, _abi):
@@ -171,7 +167,7 @@ def new_voter_answers_question(w3, serialJustice, question_id):
 def request_new_vote(w3, serialJustice, creator, question_id):
     print("=================== Request a new vote")
     print(f"### Member {creator} requests a new vote")
-    transact(w3, serialJustice, "requestNewVoter", [question_id])
+    transact(w3, serialJustice, "requestNewVote", [question_id])
     show_last_question(serialJustice)
 
 
