@@ -69,7 +69,7 @@ Steps:
 
 1. If the DAO has no members, the members will be added
 
-2. The first member submits a questions, which burns a Justice Token. If he has no JT token, he will have to wait until the next token creation.
+2. The first member submits a questions, which burns a Justice Token. If he has no JT token, he will have to wait util the next token creation.
 
 3. A member of the DAO will be randomly picked as the next voter on the question.
 

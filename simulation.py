@@ -92,10 +92,11 @@ def show_last_question(serialJustice):
         print("None")
 
 
-def show_balance(justiceToken, _accounts):
+def show_balance(justiceToken, accounts, decimals):
     print("========== Justice Token Balance")
-    for account in _accounts:
-        print(f"{account}: {call(justiceToken, 'balanceOf', [account])} JT")
+    for account in accounts:
+        balance = call(justiceToken, 'balanceOf', [account]) / (10**decimals)
+        print(f"{account}: {balance} JT")
 
 
 def check_upkeep(w3, justiceToken):
@@ -198,10 +199,11 @@ def simulation(w3, contracts, accounts):
     creator = accounts[0]
 
     answer_price = call(justiceToken, "getAnswerPrice")
+    decimals = call(justiceToken, "decimals")
 
     add_members(w3, mainDAO, accounts)
 
-    show_balance(justiceToken, accounts)
+    show_balance(justiceToken, accounts, decimals)
 
     check_enough_balance(w3, justiceToken, creator, answer_price)
     submit_question(w3, serialJustice, creator)
