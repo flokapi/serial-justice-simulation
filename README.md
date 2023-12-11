@@ -57,13 +57,16 @@ Create a `serial-justice-simulation/env/private_keys.json` which contains the pr
 
 ## Run the simulation
 
-Start the simulation with `python simulation.py`
+Start the simulation with `python main.py`
 
 
 
 # Expected results
 
-Example: [example_result.txt](./doc/example_result.txt)
+Examples:
+
+- Vote simulation: [example_vote_simulation.txt](./doc/example_vote_simulation.txt)
+- Test vote timeout: [example_test_vote_timeout.txt](./doc/example_test_vote_timeout.txt)
 
 Steps:
 

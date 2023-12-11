@@ -1,0 +1,107 @@
+#######################################################################
+#                 Simulating the voting mechanism
+#######################################################################
+=================== Add DAO Members
+Not needed
+Number of DAO members: 5
+========== Justice Token Balance
+0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa: 0.0 JT
+0x2993A16b15Ad68283fddfC2be06258c0f8738B9A: 6.0 JT
+0x9cF6fB61799d97857B2b4872bbF23985bF1eB677: 6.0 JT
+0x7026A9C05aa2C38a8C712Ed2f2b03a669A16bFF3: 6.0 JT
+0x96d1AB5Ad57e004C9AC2de5C390d3fEe3Ae4A84B: 6.0 JT
+=================== Check Justice Tokens balance
+Not enough Justice Tokens, waiting for token creation...
+### Minting one Justice Token for each member
+=> Balance is enough
+=================== Submit question
+### Member 0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa submits question: Should we remove the shoes before getting inside?
+========== Last question
+Question 6: [1, 'Should we remove the shoes before getting inside?', '0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa', '0x0000000000000000000000000000000000000000', 0, 0, 0]
+=================== Wait new voter defined
+Next voter not yet defined, waiting...
+Next Voter selected: 0x9cF6fB61799d97857B2b4872bbF23985bF1eB677
+========== Last question
+Question 6: [2, 'Should we remove the shoes before getting inside?', '0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa', '0x9cF6fB61799d97857B2b4872bbF23985bF1eB677', 0, 0, 1702305926]
+=================== New voter answers question
+### Member 0x9cF6fB61799d97857B2b4872bbF23985bF1eB677 answers to "Should we remove the shoes before getting inside?": False
+========== Last question
+Question 6: [0, 'Should we remove the shoes before getting inside?', '0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa', '0x0000000000000000000000000000000000000000', 0, 1, 0]
+=================== Check Justice Tokens balance
+Not enough Justice Tokens, waiting for token creation...
+Not enough Justice Tokens, waiting for token creation...
+Not enough Justice Tokens, waiting for token creation...
+### Minting one Justice Token for each member
+=> Balance is enough
+=================== Request a new vote
+### Member 0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa requests a new vote
+========== Last question
+Question 6: [1, 'Should we remove the shoes before getting inside?', '0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa', '0x0000000000000000000000000000000000000000', 0, 1, 0]
+=================== Wait new voter defined
+Next voter not yet defined, waiting...
+Next Voter selected: 0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa
+========== Last question
+Question 6: [2, 'Should we remove the shoes before getting inside?', '0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa', '0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa', 0, 1, 1702305993]
+=================== New voter answers question
+### Member 0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa answers to "Should we remove the shoes before getting inside?": True
+========== Last question
+Question 6: [0, 'Should we remove the shoes before getting inside?', '0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa', '0x0000000000000000000000000000000000000000', 1, 1, 0]
+=================== Check Justice Tokens balance
+Not enough Justice Tokens, waiting for token creation...
+Not enough Justice Tokens, waiting for token creation...
+Not enough Justice Tokens, waiting for token creation...
+### Minting one Justice Token for each member
+=> Balance is enough
+=================== Request a new vote
+### Member 0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa requests a new vote
+========== Last question
+Question 6: [1, 'Should we remove the shoes before getting inside?', '0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa', '0x0000000000000000000000000000000000000000', 1, 1, 0]
+=================== Wait new voter defined
+Next voter not yet defined, waiting...
+Next Voter selected: 0x7026A9C05aa2C38a8C712Ed2f2b03a669A16bFF3
+========== Last question
+Question 6: [2, 'Should we remove the shoes before getting inside?', '0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa', '0x7026A9C05aa2C38a8C712Ed2f2b03a669A16bFF3', 1, 1, 1702306069]
+=================== New voter answers question
+### Member 0x7026A9C05aa2C38a8C712Ed2f2b03a669A16bFF3 answers to "Should we remove the shoes before getting inside?": False
+========== Last question
+Question 6: [0, 'Should we remove the shoes before getting inside?', '0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa', '0x0000000000000000000000000000000000000000', 1, 2, 0]
+=================== Check Justice Tokens balance
+Not enough Justice Tokens, waiting for token creation...
+Not enough Justice Tokens, waiting for token creation...
+Not enough Justice Tokens, waiting for token creation...
+### Minting one Justice Token for each member
+=> Balance is enough
+=================== Request a new vote
+### Member 0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa requests a new vote
+========== Last question
+Question 6: [1, 'Should we remove the shoes before getting inside?', '0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa', '0x0000000000000000000000000000000000000000', 1, 2, 0]
+=================== Wait new voter defined
+Next voter not yet defined, waiting...
+Next Voter selected: 0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa
+========== Last question
+Question 6: [2, 'Should we remove the shoes before getting inside?', '0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa', '0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa', 1, 2, 1702306151]
+=================== New voter answers question
+### Member 0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa answers to "Should we remove the shoes before getting inside?": True
+========== Last question
+Question 6: [0, 'Should we remove the shoes before getting inside?', '0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa', '0x0000000000000000000000000000000000000000', 2, 2, 0]
+=================== Check Justice Tokens balance
+Not enough Justice Tokens, waiting for token creation...
+Not enough Justice Tokens, waiting for token creation...
+Not enough Justice Tokens, waiting for token creation...
+### Minting one Justice Token for each member
+=> Balance is enough
+=================== Request a new vote
+### Member 0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa requests a new vote
+========== Last question
+Question 6: [1, 'Should we remove the shoes before getting inside?', '0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa', '0x0000000000000000000000000000000000000000', 2, 2, 0]
+=================== Wait new voter defined
+Next voter not yet defined, waiting...
+Next Voter selected: 0x2993A16b15Ad68283fddfC2be06258c0f8738B9A
+========== Last question
+Question 6: [2, 'Should we remove the shoes before getting inside?', '0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa', '0x2993A16b15Ad68283fddfC2be06258c0f8738B9A', 2, 2, 1702306231]
+=================== New voter answers question
+### Member 0x2993A16b15Ad68283fddfC2be06258c0f8738B9A answers to "Should we remove the shoes before getting inside?": True
+========== Last question
+Question 6: [3, 'Should we remove the shoes before getting inside?', '0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa', '0x0000000000000000000000000000000000000000', 3, 2, 0]
+=================== Show final answer
+Yes, everybody must remove their shoes

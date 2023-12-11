@@ -1,0 +1,42 @@
+Running on chain id: 4002
+MainDAO address: 0xC2E5b406168981389bE06f9b2db1Dd6eA9eA3456
+SerialJustice address: 0xDC61b73aA1968c98def55b3881D5118548D820aF
+JusticeToken address: 0x0E128EFA8Db6f91E4894e1626B47F7234Fd0b0e6
+#######################################################################
+#                 Testing the vote Timeout
+#######################################################################
+=================== Add DAO Members
+Not needed
+Number of DAO members: 5
+=================== Check Justice Tokens balance
+Not enough Justice Tokens, waiting for token creation...
+### Minting one Justice Token for each member
+=> Balance is enough
+=================== Submit question
+### Member 0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa submits question: Should we remove the shoes before getting inside?
+========== Last question
+Question 5: [1, 'Should we remove the shoes before getting inside?', '0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa', '0x0000000000000000000000000000000000000000', 0, 0, 0]
+=================== Wait new voter defined
+Next voter not yet defined, waiting...
+Next voter not yet defined, waiting...
+Next Voter selected: 0x9cF6fB61799d97857B2b4872bbF23985bF1eB677
+========== Last question
+Question 5: [2, 'Should we remove the shoes before getting inside?', '0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa', '0x9cF6fB61799d97857B2b4872bbF23985bF1eB677', 0, 0, 1702305784]
+========== Last question
+Question 5: [2, 'Should we remove the shoes before getting inside?', '0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa', '0x9cF6fB61799d97857B2b4872bbF23985bF1eB677', 0, 0, 1702305784]
+Waiting 120s until the vote times out...
+not yet
+not yet
+not yet
+not yet
+timeout!
+Performing SerialJustice upkeep
+=================== Wait new voter defined
+Next voter not yet defined, waiting...
+Next Voter selected: 0x9cF6fB61799d97857B2b4872bbF23985bF1eB677
+========== Last question
+Question 5: [2, 'Should we remove the shoes before getting inside?', '0xAf7A4B0827c5033B641819deeBcb3dd771BCF3Aa', '0x9cF6fB61799d97857B2b4872bbF23985bF1eB677', 0, 0, 1702305872]
+=================== Results
+voter 1: 0x9cF6fB61799d97857B2b4872bbF23985bF1eB677 ; voter 2 0x9cF6fB61799d97857B2b4872bbF23985bF1eB677 -- they might actually be the same
+vote until 1: 1702305784 ; vote until 2 1702305872 -- must be different
+=> PASSED!
