@@ -6,8 +6,6 @@ As a prerequisite, [serial-justice-contracts](https://github.com/flokapi/serial-
 
 Create 5 MetaMask wallets and fund them with the Fantom Testnet Faucet: https://faucet.fantom.network/
 
-
-
 ## Installation
 
 You should find yourself in the same directory as `serial-justice-contracts`
@@ -25,11 +23,9 @@ git clone git@github.com:flokapi/serial-justice-simulation.git
 
 Install the dependencies
 
-````
+```
 pip install -r requirements.txt
-````
-
-
+```
 
 ## Deploy and export the contracts
 
@@ -53,20 +49,16 @@ Create a `serial-justice-simulation/env/private_keys.json` which contains the pr
 ]
 ```
 
-
-
 ## Run the simulation
 
 Start the simulation with `python main.py`
-
-
 
 # Expected results
 
 Examples:
 
-- Vote simulation: [example_vote_simulation.txt](./doc/example_vote_simulation.txt)
-- Test vote timeout: [example_test_vote_timeout.txt](./doc/example_test_vote_timeout.txt)
+-   Vote simulation: [example_vote_simulation.txt](./doc/example_vote_simulation.txt)
+-   Test vote timeout: [example_test_vote_timeout.txt](./doc/example_test_vote_timeout.txt)
 
 Steps:
 
@@ -103,5 +95,6 @@ struct Question {
     address nextVoter;
     uint256 nbVotesYes;
     uint256 nbVotesNo;
+    uint256 voteUntil;
 }
 ```
